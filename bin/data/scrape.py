@@ -31,7 +31,7 @@ class Pictures:
             html = html.decode(enc)
             return html
 
-    def scrapePictures(self):
+    def execute(self):
         resources = []
         html = self.__getHtml()
         soup = bs4.BeautifulSoup(html, "html.parser")
@@ -42,6 +42,9 @@ class Pictures:
         num = 0
         os.makedirs("./" + str(self.station_name), exist_ok=True)
         for e in elements:
+            # 6枚で終了
+            if num == 6:
+                break
             request = urllib.request.urlopen(e['src'])
             with open("./" + str(self.station_name) + "/pic" + str(num) + ".png", "wb") as f:
                 f.write(request.read())
