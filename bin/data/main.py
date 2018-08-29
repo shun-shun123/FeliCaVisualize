@@ -3,7 +3,14 @@ from httpClient import HttpClient
 from scrape import Pictures
 
 httpClient = HttpClient()
-scrapePictures = Pictures("長岡京駅")
-
 httpClient.GET()
-scrapePictures.scrapePictures()
+
+from jsonController import JsonController
+jsonController = JsonController()
+entranceStationNameList, exitStationNameList = jsonController.listOfStationName()
+for eachEntrance in entranceStationNameList:
+    scrapeEntrancePictures = Pictures(eachEntrance + "駅")
+    scrapeEntrancePictures.execute()
+for eachExit in exitStationNameList:
+    scrapeExitPictures = Pictures(eachExit + "駅")
+    scrapeExitPictures.execute()
