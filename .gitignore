@@ -1,2 +1,4 @@
 config.make
 openFrameworks-Info.plist
+bin/data/.DS_Store
+bin/data/__pacache__
