@@ -1,0 +1,14 @@
+{
+    "0":{
+        "station":"Nagaokakyo",
+        "money":1000
+    },
+    "1":{
+        "station":"Kyoto",
+        "money":500
+    },
+    "2":{
+        "station":"Mukomachi",
+        "money":800
+    }
+}
