@@ -1,1 +1,1 @@
-# ICOCAなどのFeliCaを用いたカードから情報を取り出し描画するプロジェクトです
+# FeliCaVisualize
