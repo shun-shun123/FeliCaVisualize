@@ -10,13 +10,6 @@ void ofApp::setup(){
         cout << "Faild to parse JSON" << endl;
     }
     font.load("Batang.ttf", 30);
-    
-    // HTTP通信の準備
-    const char* pythonFileName = "python ~/Desktop/sample.py";
-    const char* pythonVersionCheck = "python -V";
-    system(pythonFileName);
-//    system(pythonVersionCheck);
-    
 }
 
 //--------------------------------------------------------------

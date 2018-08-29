@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- SpaceID=0 robot -->
+
+<html lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Yahoo!検索 - この検索結果ページについて</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="description" content="Yahoo!検索が提供する簡易版の検索結果ページの説明。簡易版の検索結果ページの対象となるブラウザや利用できない機能など"><meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<link rel="stylesheet" href="https://s.yimg.jp/images/serp/ws/css/140318/ws20.css" type="text/css" media="all">
+</head>
+<body>
+<div id="doc">
+
+<div id="hd">
+
+<div id="mh">
+<p><a href="https://www.yahoo.co.jp/" title="Yahoo! JAPAN ホームページへ"><img align="middle" border="0" src="https://s.yimg.jp/c/logo/f/2.0/yj_r_34.gif" alt="Yahoo! JAPAN" width="136" height="34"></a></p>
+<p class="about" align="right">&nbsp;</p>
+</div><!--/#mh -->
+</div><!--/#hd -->
+<div id="bd">
+<div id="inf">
+<h1>Yahoo!検索が提供する簡易版検索結果ページ</h1>
+</div><!--/#inf -->
+<div id="res">
+<div id="w">
+
+<p><a href="https://search.yahoo.co.jp/image?p=%E9%95%B7%E5%B2%A1%E4%BA%AC%E9%A7%85">&laquo;&nbsp;Yahoo!検索に戻る</a></p>
+
+<div id="exp">
+
+<dl class="notice">
+
+<dt>ご注意</dt>
+<dd>このページは、Yahoo! JAPANが推奨するブラウザ以外のブラウザでYahoo!検索を利用する際のご案内です。</dd>
+<dd>リンク先のページは、Yahoo! JAPANが推奨するブラウザ以外のブラウザでは、表示が崩れたり、読みにくくなったりする可能性があります。あらかじめご了承ください。</dd>
+</dl>
+
+<div class="sec">
+<h2>簡易版検索結果ページとは</h2>
+<p>Yahoo!検索は、<a href="https://www.yahoo-help.jp/app/answers/detail/p/533/a_id/43864/">Yahoo! JAPANが推奨するブラウザ</a>以外のブラウザでも検索結果の表示が崩れないように定期的に調整を行い、ひとつでも多くのブラウザでYahoo!検索を快適にご利用いただけるようにしています。また、専用の検索結果ページを提供しているブラウザもあります。簡易版検索結果ページは、下記のブラウザ向けに最適化された検索結果ページで、ブラウザに応じて1カラムタイプまたは2カラムタイプいずれかの簡易版検索結果ページが表示されます。</p>
+
+<dl>
+<dt>簡易版検索結果ページが表示されるブラウザ</dt>
+
+<dd><ul>
+<li>セキュリティーアップグレードなどのアップグレードが終了しているブラウザ</li>
+<li>CSS（カスケーディング・スタイル・シート）に対応していないブラウザ</li>
+<li>CSSに対応しているが、Yahoo!検索の標準の検索結果ページをレイアウトするのに必要なCSSの対応が行われていないブラウザ</li>
+<li>携帯端末に組み込まれたブラウザ・携帯端末向けブラウザ<br>など</li>
+</ul></dd>
+</dl>
+<p>なお、具体的なブラウザ名とバージョンについては、定期的に対象が変更されるため、記載を省略しています。</p>
+
+</div><!--/.sec -->
+
+<div class="sec">
+
+<h2>簡易版検索結果ページで利用できないYahoo!検索の機能</h2>
+<p>簡易版検索結果ページでは、下記のYahoo!検索の機能はご利用いただけません。</p>
+<ul>
+<li>ダイレクト検索</li>
+<li>検索オプション</li>
+<li>検索設定（サイト内検索リンク表示、クロール日表示、ページサイズ表示、Myブックマーク情報表示、表示件数、文字サイズ、セーフサーチ、チャイルドロック、対象とする言語、表記のゆれなど）と設定の反映<br>など</li>
+</ul>
+
+<p>これらの機能を利用される場合には、ブラウザを<a href="https://www.yahoo-help.jp/app/answers/detail/p/533/a_id/43864/">Yahoo! JAPANが推奨するブラウザ</a>に変更してください。</p>
+</div><!--/.sec -->
+
+<div class="sec"> 
+<h2>Yahoo!検索の標準の検索結果ページを表示するには</h2>
+<p>検索設定にて、「簡易版検索結果ページで表示する」のチェックを外し、設定を保存することでYahoo!検索の標準の検索結果ページを利用できます。ただし、Yahoo! JAPANが推奨するブラウザ以外のブラウザでは、表示が崩れたり、読みにくくなったりする可能性があります。この点をあらかじめご了承いただいたうえで、<a href="https://search.yahoo.co.jp/search/preferences?pref_done=https%3A%2F%2Fsearch.yahoo.co.jp%2Fimage%3Fp%3D%25E9%2595%25B7%25E5%25B2%25A1%25E4%25BA%25AC%25E9%25A7%2585">検索設定</a>にて設定してください。</p>
+</div><!--/.sec -->
+
+<div class="sec">
+<h2>ヘルプ・お問い合わせ</h2>
+<p>Yahoo!検索に関するヘルプ・お問い合わせは、<a href="https://www.yahoo-help.jp/app/home/p/595/">Yahoo!検索ヘルプ</a>をご覧ください。</p>
+
+</div><!--/.sec -->
+
+<div class="sec">
+<h2>免責事項</h2>
+
+<p>Yahoo!検索の免責事項は、<a href="https://search.yahoo.co.jp/info/disclaimer.html">免責事項</a>をご覧ください。</p>
+</div><!--/.sec -->
+
+</div><!--/#exp -->
+
+<p><a href="https://search.yahoo.co.jp/image?p=%E9%95%B7%E5%B2%A1%E4%BA%AC%E9%A7%85">&laquo;&nbsp;Yahoo!検索に戻る</a></p>
+
+</div><!--/#w -->
+
+</div><!--/#res -->
+</div><!--/#bd -->
+<div id="ft">
+<p>Copyright (C) 2018 Yahoo Japan Corporation. All Rights Reserved.</p>
+
+</div><!--/#ft -->
+</div><!--/#doc -->
+</body>
+</html>
+<!-- fe1613.xsp.search.ssk.ynwp.yahoo.co.jp Wed Aug 29 22:31:32 JST 2018 -->
