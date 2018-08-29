@@ -4,6 +4,7 @@
 #include "ofxJson.h"
 #include "ofxTrueTypeFontUC.h"
 
+
 class ofApp : public ofBaseApp{
 
 	public:
@@ -21,6 +22,16 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+    static const int NUM_OF_PIC = 6;
     ofxJSONElement json;
     ofxTrueTypeFontUC font;
+    vector<vector<ofImage>> images;
+    vector<string> dirs;
+    struct pictureSet {
+        string dirName;
+        ofImage images[NUM_OF_PIC];
+    };
+    vector<struct pictureSet> pictureSets;
+    ofEasyCam cam;
+    ofSoundPlayer music;
 };
