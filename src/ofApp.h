@@ -23,15 +23,18 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     static const int NUM_OF_PIC = 6;
+    
+    bool loadData(string file);
+    
     ofxJSONElement json;
     ofxTrueTypeFontUC font;
-    vector<vector<ofImage>> images;
-    vector<string> dirs;
-    struct pictureSet {
-        string dirName;
-        ofImage images[NUM_OF_PIC];
+    const string inStaKey = "entranceStationName";
+    const string outStaKey = "exitStationName";
+    const string moneyKey = "exitStationID";
+    struct Elem {
+        string entranceStationName;
+        string exitStationName;
+        int money;
     };
-    vector<struct pictureSet> pictureSets;
-    ofEasyCam cam;
-    ofSoundPlayer music;
+    vector<struct Elem> dataSets;
 };
