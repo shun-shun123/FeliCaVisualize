@@ -2,153 +2,121 @@
     {
         "terminal": "改札機",
         "process": "運賃支払(改札出場)",
-        "entranceStationName": "天王寺",
-        "exitStationName": "新金岡",
-        "entranceStationId": "2018-08-26T15:00:00.000Z",
-        "exitStationID": 901
+        "entranceStationName": "草津",
+        "exitStationName": "長岡京",
+        "entranceStationId": "2018-08-29T15:00:00.000Z",
+        "exitStationID": 895
     },
     {
         "terminal": "改札機",
         "process": "運賃支払(改札出場)",
-        "entranceStationName": "福島",
-        "exitStationName": "天王寺",
-        "entranceStationId": "2018-08-26T15:00:00.000Z",
-        "exitStationID": 1181
+        "entranceStationName": "長岡京",
+        "exitStationName": "草津",
+        "entranceStationId": "2018-08-29T15:00:00.000Z",
+        "exitStationID": 1475
     },
     {
         "terminal": "改札機",
         "process": "運賃支払(改札出場)",
-        "entranceStationName": "三ノ宮",
-        "exitStationName": "新福島",
-        "entranceStationId": "2018-08-26T15:00:00.000Z",
-        "exitStationID": 1361
+        "entranceStationName": "南草津",
+        "exitStationName": "長岡京",
+        "entranceStationId": "2018-08-28T15:00:00.000Z",
+        "exitStationID": 55
     },
     {
         "terminal": "改札機",
         "process": "運賃支払(改札出場)",
-        "entranceStationName": "南公園",
-        "exitStationName": "三宮",
-        "entranceStationId": "2018-08-26T15:00:00.000Z",
-        "exitStationID": 1771
+        "entranceStationName": "長岡京",
+        "exitStationName": "南草津",
+        "entranceStationId": "2018-08-28T15:00:00.000Z",
+        "exitStationID": 555
     },
     {
         "terminal": "改札機",
         "process": "運賃支払(改札出場)",
-        "entranceStationName": "京コンピュータ前",
-        "exitStationName": "南公園",
-        "entranceStationId": "2018-08-26T15:00:00.000Z",
-        "exitStationID": 2021
-    },
-    {
-        "terminal": "改札機",
-        "process": "運賃支払(改札出場)",
-        "entranceStationName": "三宮",
-        "exitStationName": "京コンピュータ前",
-        "entranceStationId": "2018-08-26T15:00:00.000Z",
-        "exitStationID": 2271
+        "entranceStationName": "高槻市",
+        "exitStationName": "西山天王山",
+        "entranceStationId": "2018-08-27T15:00:00.000Z",
+        "exitStationID": 184
     },
     {
         "terminal": "改札機",
         "process": "運賃支払(改札出場)",
         "entranceStationName": "梅田",
-        "exitStationName": "三宮",
-        "entranceStationId": "2018-08-26T15:00:00.000Z",
-        "exitStationID": 2551
+        "exitStationName": "高槻市",
+        "entranceStationId": "2018-08-27T15:00:00.000Z",
+        "exitStationID": 404
     },
     {
         "terminal": "改札機",
         "process": "運賃支払(改札出場)",
-        "entranceStationName": "新金岡",
+        "entranceStationName": "長岡天神",
         "exitStationName": "梅田",
-        "entranceStationId": "2018-08-26T15:00:00.000Z",
-        "exitStationID": 871
+        "entranceStationId": "2018-08-27T15:00:00.000Z",
+        "exitStationID": 684
     },
     {
         "terminal": "改札機",
         "process": "運賃支払(改札出場)",
-        "entranceStationName": "梅田",
-        "exitStationName": "新金岡",
-        "entranceStationId": "2018-08-23T15:00:00.000Z",
-        "exitStationID": 1015
+        "entranceStationName": "河瀬",
+        "exitStationName": "長岡京",
+        "entranceStationId": "2018-08-25T15:00:00.000Z",
+        "exitStationID": 54
     },
     {
         "terminal": "改札機",
         "process": "運賃支払(改札出場)",
-        "entranceStationName": "京コンピュータ前",
-        "exitStationName": "南公園",
-        "entranceStationId": "2018-08-26T15:00:00.000Z",
-        "exitStationID": 2021
+        "entranceStationName": "長岡京",
+        "exitStationName": "河瀬",
+        "entranceStationId": "2018-08-25T15:00:00.000Z",
+        "exitStationID": 194
     },
     {
         "terminal": "改札機",
         "process": "運賃支払(改札出場)",
-        "entranceStationName": "三宮",
-        "exitStationName": "京コンピュータ前",
-        "entranceStationId": "2018-08-26T15:00:00.000Z",
-        "exitStationID": 2271
+        "entranceStationName": "京都",
+        "exitStationName": "長岡京",
+        "entranceStationId": "2018-08-24T15:00:00.000Z",
+        "exitStationID": 334
     },
     {
         "terminal": "改札機",
         "process": "運賃支払(改札出場)",
-        "entranceStationName": "梅田",
-        "exitStationName": "三宮",
-        "entranceStationId": "2018-08-26T15:00:00.000Z",
-        "exitStationID": 2551
+        "entranceStationName": "草津",
+        "exitStationName": "長岡京",
+        "entranceStationId": "2018-08-29T15:00:00.000Z",
+        "exitStationID": 895
     },
     {
         "terminal": "改札機",
         "process": "運賃支払(改札出場)",
-        "entranceStationName": "新金岡",
-        "exitStationName": "梅田",
-        "entranceStationId": "2018-08-26T15:00:00.000Z",
-        "exitStationID": 871
+        "entranceStationName": "長岡京",
+        "exitStationName": "草津",
+        "entranceStationId": "2018-08-29T15:00:00.000Z",
+        "exitStationID": 1475
     },
     {
         "terminal": "改札機",
         "process": "運賃支払(改札出場)",
-        "entranceStationName": "梅田",
-        "exitStationName": "新金岡",
-        "entranceStationId": "2018-08-23T15:00:00.000Z",
-        "exitStationID": 1015
+        "entranceStationName": "南草津",
+        "exitStationName": "長岡京",
+        "entranceStationId": "2018-08-28T15:00:00.000Z",
+        "exitStationID": 55
     },
     {
         "terminal": "改札機",
         "process": "運賃支払(改札出場)",
-        "entranceStationName": "新金岡",
-        "exitStationName": "梅田",
-        "entranceStationId": "2018-08-23T15:00:00.000Z",
-        "exitStationID": 1335
+        "entranceStationName": "長岡京",
+        "exitStationName": "南草津",
+        "entranceStationId": "2018-08-28T15:00:00.000Z",
+        "exitStationID": 555
     },
     {
         "terminal": "改札機",
         "process": "運賃支払(改札出場)",
-        "entranceStationName": "天王寺",
-        "exitStationName": "新金岡",
-        "entranceStationId": "2018-08-26T15:00:00.000Z",
-        "exitStationID": 901
-    },
-    {
-        "terminal": "改札機",
-        "process": "運賃支払(改札出場)",
-        "entranceStationName": "福島",
-        "exitStationName": "天王寺",
-        "entranceStationId": "2018-08-26T15:00:00.000Z",
-        "exitStationID": 1181
-    },
-    {
-        "terminal": "改札機",
-        "process": "運賃支払(改札出場)",
-        "entranceStationName": "三ノ宮",
-        "exitStationName": "新福島",
-        "entranceStationId": "2018-08-26T15:00:00.000Z",
-        "exitStationID": 1361
-    },
-    {
-        "terminal": "改札機",
-        "process": "運賃支払(改札出場)",
-        "entranceStationName": "南公園",
-        "exitStationName": "三宮",
-        "entranceStationId": "2018-08-26T15:00:00.000Z",
-        "exitStationID": 1771
+        "entranceStationName": "高槻市",
+        "exitStationName": "西山天王山",
+        "entranceStationId": "2018-08-27T15:00:00.000Z",
+        "exitStationID": 184
     }
 ]

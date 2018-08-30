@@ -15,6 +15,7 @@
 struct Elem {
     string entranceStationName;
     string exitStationName;
+    string entranceStationId;
     int money;
 };
 
@@ -24,7 +25,6 @@ private:
     vector<ofVec2f> position;
     vector<int> alpha;
     vector<bool> state;
-    ofMesh mesh;
     ofxTrueTypeFontUC font;
     
 public:

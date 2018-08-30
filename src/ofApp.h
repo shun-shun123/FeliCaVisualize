@@ -2,11 +2,12 @@
 
 #include "ofMain.h"
 #include "ofxJson.h"
-#include "InteractiveMode.hpp"
+#include "Visualization.hpp"
 
 // Jsonデータを取り出す時のKey
 const string inStaKey = "entranceStationName";
 const string outStaKey = "exitStationName";
+const string dateKey = "entranceStationId";
 const string moneyKey = "exitStationID";
 
 class ofApp : public ofBaseApp{
@@ -30,4 +31,6 @@ class ofApp : public ofBaseApp{
     void loadData(string file, ofxJSONElement& json);
     vector<struct Elem> buildDataSet(ofxJSONElement json);
     InteractiveMode *interactiveMode = 0;
+    Visualization *visualization = 0;
+    int state = 0;
 };

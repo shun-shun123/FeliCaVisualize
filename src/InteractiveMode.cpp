@@ -19,7 +19,6 @@ InteractiveMode::InteractiveMode(vector<struct Elem> elem) {
     cout << "InteractiveMode is successfully created" << endl;
     font.load("sazanami.ttf", 20);
     this->dataSets = elem;
-    this->mesh.setMode(OF_PRIMITIVE_LINE_LOOP);
     int limit = 0; // limiteが10000を超えたらwhileを抜ける
     while (this->position.size() != this->dataSets.size() && limit < 1000000) {
         ofVec2f pos = ofVec2f(ofRandomWidth(), ofRandomHeight());
@@ -32,13 +31,11 @@ InteractiveMode::InteractiveMode(vector<struct Elem> elem) {
         }
         if (canPush) {
             this->position.push_back(pos);
-            this->mesh.addVertex(ofVec3f(pos.x, pos.y, 0));
         }
         limit++;
     }
     for (int i = this->position.size(); i < this->dataSets.size(); i++) {
         this->position.push_back(ofVec2f(ofRandomWidth(), ofRandomHeight()));
-        this->mesh.addVertex(ofVec3f(this->position[i].x, this->position[i].y, 0));
     }
     for (int i = 0; i < this->dataSets.size(); i++) {
         alpha.push_back(255);

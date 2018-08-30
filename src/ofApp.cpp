@@ -2,6 +2,7 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+    ofToggleFullscreen();
     ofBackground(0);
     ofSetVerticalSync(true);
     ofEnableAlphaBlending();
@@ -10,16 +11,31 @@ void ofApp::setup(){
     ofxJSONElement json;
     loadData("data.json", json);
     interactiveMode = new InteractiveMode(buildDataSet(json));
+    visualization = new Visualization(buildDataSet(json));
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    interactiveMode->update();
+    switch (state) {
+        case 0:
+            interactiveMode->update();
+            break;
+        case 1:
+            visualization->update();
+            break;
+    }
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    interactiveMode->draw();
+    switch (state) {
+        case 0:
+            interactiveMode->draw();
+            break;
+        case 1:
+            visualization->draw();
+            break;
+    }
 }
 
 //--------------------------------------------------------------
@@ -40,6 +56,7 @@ vector<struct Elem> ofApp::buildDataSet(ofxJSONElement json) {
         struct Elem elem = {
             json[i][inStaKey].asString(),
             json[i][outStaKey].asString(),
+            json[i][dateKey].asString(),
             json[i][moneyKey].asInt()
         };
         dataSets.push_back(elem);
@@ -49,7 +66,18 @@ vector<struct Elem> ofApp::buildDataSet(ofxJSONElement json) {
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-
+    switch (key) {
+        case '0':
+            state = 0;
+            break;
+        case '1':
+            state = 1;
+            break;
+        default:
+            state = -1;
+            break;
+    }
+    cout << "state: " << state << endl;
 }
 
 //--------------------------------------------------------------
@@ -69,7 +97,11 @@ void ofApp::mouseDragged(int x, int y, int button){
 
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
-    interactiveMode->isClicked(x, y);
+    switch (state) {
+        case 0:
+            interactiveMode->isClicked(x, y);
+            break;
+    }
 }
 
 //--------------------------------------------------------------
