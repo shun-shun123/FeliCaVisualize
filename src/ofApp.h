@@ -4,6 +4,11 @@
 #include "ofxJson.h"
 #include "InteractiveMode.hpp"
 
+// Jsonデータを取り出す時のKey
+const string inStaKey = "entranceStationName";
+const string outStaKey = "exitStationName";
+const string moneyKey = "exitStationID";
+
 class ofApp : public ofBaseApp{
 
 	public:
@@ -22,11 +27,7 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
-    bool loadData(string file);
-    
-    ofxJSONElement json;
-    const string inStaKey = "entranceStationName";
-    const string outStaKey = "exitStationName";
-    const string moneyKey = "exitStationID";
+    void loadData(string file, ofxJSONElement& json);
+    vector<struct Elem> buildDataSet(ofxJSONElement json);
     InteractiveMode *interactiveMode = 0;
 };

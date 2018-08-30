@@ -5,18 +5,11 @@ void ofApp::setup(){
     ofBackground(0);
     ofSetVerticalSync(true);
     ofEnableAlphaBlending();
-    loadData("data.json");
     
-    vector<struct Elem> dataSets;
-    for (int i = 0; i < json.size(); i++) {
-        struct Elem elem = {
-             json[i][inStaKey].asString(),
-            json[i][outStaKey].asString(),
-            json[i][moneyKey].asInt(),
-        };
-        dataSets.push_back(elem);
-    }
-    interactiveMode = new InteractiveMode(dataSets);
+    // JSONデータを読み込みインスタンス生成する
+    ofxJSONElement json;
+    loadData("data.json", json);
+    interactiveMode = new InteractiveMode(buildDataSet(json));
 }
 
 //--------------------------------------------------------------
@@ -30,14 +23,28 @@ void ofApp::draw(){
 }
 
 //--------------------------------------------------------------
-bool ofApp::loadData(string file) {
+void ofApp::loadData(string file, ofxJSONElement& json) {
     bool success = json.open(file);
     if (success) {
         cout << "Success to parse JSON" << endl;
     } else {
         cout << "Faild to parse JSON" << endl;
+        exit();
     }
-    return success;
+}
+
+//--------------------------------------------------------------
+vector<struct Elem> ofApp::buildDataSet(ofxJSONElement json) {
+    vector<struct Elem> dataSets;
+    for (int i = 0; i < json.size(); i++) {
+        struct Elem elem = {
+            json[i][inStaKey].asString(),
+            json[i][outStaKey].asString(),
+            json[i][moneyKey].asInt()
+        };
+        dataSets.push_back(elem);
+    }
+    return dataSets;
 }
 
 //--------------------------------------------------------------
