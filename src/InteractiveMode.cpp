@@ -12,11 +12,11 @@
 //}
 
 InteractiveMode::InteractiveMode() {
-    cout << "インスタンス生成" << endl;
+    cout << "No argument InteractiveMode is created" << endl;
 }
 
 InteractiveMode::InteractiveMode(vector<struct Elem> elem) {
-    cout << "できた" << endl;
+    cout << "InteractiveMode is successfully created" << endl;
     font.load("sazanami.ttf", 20);
     this->dataSets = elem;
     this->mesh.setMode(OF_PRIMITIVE_LINE_LOOP);
@@ -49,7 +49,7 @@ InteractiveMode::InteractiveMode(vector<struct Elem> elem) {
 void InteractiveMode::update() {
     for (int i = 0; i < this->dataSets.size(); i++) {
         if (this->state[i]) {
-            this->alpha[i]--;
+            this->alpha[i] -= 3;
             if (this->alpha[i] < 0) {
                 this->alpha[i] = 0;
             }
@@ -59,10 +59,12 @@ void InteractiveMode::update() {
 
 void InteractiveMode::draw() {
     for (int i = 0; i < this->dataSets.size(); i++) {
+        ofPushMatrix();
+        ofTranslate(this->position[i].x, this->position[i].y);
+        ofRotateY(ofGetFrameNum());
         ofSetColor(255, this->alpha[i]);
-        this->font.drawString(this->dataSets[i].entranceStationName, this->position[i].x, this->position[i].y);
-        ofSetColor(255, ofMap(this->alpha[i], 0, 255, 255, 0));
-        this->font.drawString(ofToString(this->dataSets[i].money), this->position[i].x, this->position[i].y);
+        this->font.drawString(this->dataSets[i].entranceStationName, 0, 0);
+        ofPopMatrix();
     }
     this->mesh.draw();
 }
