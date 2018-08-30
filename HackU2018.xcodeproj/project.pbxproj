@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3CF0C11B200A50AAEADAA8DF /* InteractiveMode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 121ABC0B3B8CF35BD38E9EF4 /* InteractiveMode.cpp */; };
 		9026C378213826A400C4B148 /* Visualization.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9026C376213826A400C4B148 /* Visualization.cpp */; };
+		90BA0D9E2138B1760083FB1F /* Loading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90BA0D9C2138B1760083FB1F /* Loading.cpp */; };
 		BEDFEE7400C58EA4E412B757 /* ofxJSONElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2B099E6BD1199664C48B177 /* ofxJSONElement.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
@@ -57,6 +58,8 @@
 		61313493CDB52744E22A604D /* json-forwards.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "json-forwards.h"; path = "../../../addons/ofxJSON/libs/jsoncpp/include/json/json-forwards.h"; sourceTree = SOURCE_ROOT; };
 		9026C376213826A400C4B148 /* Visualization.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Visualization.cpp; sourceTree = "<group>"; };
 		9026C377213826A400C4B148 /* Visualization.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Visualization.hpp; sourceTree = "<group>"; };
+		90BA0D9C2138B1760083FB1F /* Loading.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Loading.cpp; sourceTree = "<group>"; };
+		90BA0D9D2138B1760083FB1F /* Loading.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Loading.hpp; sourceTree = "<group>"; };
 		DA5CEA18245F0E6796FC0598 /* InteractiveMode.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = InteractiveMode.hpp; path = src/InteractiveMode.hpp; sourceTree = SOURCE_ROOT; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E4B69B5B0A3A1756003C02F2 /* HackU2018Debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackU2018Debug.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,6 +201,8 @@
 				DA5CEA18245F0E6796FC0598 /* InteractiveMode.hpp */,
 				9026C376213826A400C4B148 /* Visualization.cpp */,
 				9026C377213826A400C4B148 /* Visualization.hpp */,
+				90BA0D9C2138B1760083FB1F /* Loading.cpp */,
+				90BA0D9D2138B1760083FB1F /* Loading.hpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -308,6 +313,7 @@
 			files = (
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				90BA0D9E2138B1760083FB1F /* Loading.cpp in Sources */,
 				9026C378213826A400C4B148 /* Visualization.cpp in Sources */,
 				3CF0C11B200A50AAEADAA8DF /* InteractiveMode.cpp in Sources */,
 				BEDFEE7400C58EA4E412B757 /* ofxJSONElement.cpp in Sources */,

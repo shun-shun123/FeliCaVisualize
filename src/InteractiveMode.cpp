@@ -19,59 +19,37 @@ InteractiveMode::InteractiveMode(vector<struct Elem> elem) {
     cout << "InteractiveMode is successfully created" << endl;
     font.load("sazanami.ttf", 20);
     this->dataSets = elem;
-    int limit = 0; // limiteが10000を超えたらwhileを抜ける
-    while (this->position.size() != this->dataSets.size() && limit < 1000000) {
-        ofVec2f pos = ofVec2f(ofRandomWidth(), ofRandomHeight());
-        // 全要素に対して一定以上の距離を保って入ればpush_back
-        bool canPush = true;
-        for (int i = 0; i < this->position.size(); i++) {
-            if (pos.distance(this->position[i]) <= 100) {
-                canPush = false;
-            }
-        }
-        if (canPush) {
-            this->position.push_back(pos);
-        }
-        limit++;
-    }
-    for (int i = this->position.size(); i < this->dataSets.size(); i++) {
-        this->position.push_back(ofVec2f(ofRandomWidth(), ofRandomHeight()));
-    }
     for (int i = 0; i < this->dataSets.size(); i++) {
-        alpha.push_back(255);
-        state.push_back(false);
+        int y = ofGetHeight() / this->dataSets.size() * i + 50;
+        this->position.push_back(ofVec2f(0, y));
+        this->isVisible.push_back(false);
     }
+    
 }
 
 void InteractiveMode::update() {
-    for (int i = 0; i < this->dataSets.size(); i++) {
-        if (this->state[i]) {
-            this->alpha[i] -= 3;
-            if (this->alpha[i] < 0) {
-                this->alpha[i] = 0;
-            }
+    if (index < this->dataSets.size()) {
+        if (ofGetFrameNum() % 20 == 0) {
+            isVisible[index] = true;
+            index++;
         }
     }
 }
 
 void InteractiveMode::draw() {
+    ofPushStyle();
+    ofSetColor(0, 200, 0);
     for (int i = 0; i < this->dataSets.size(); i++) {
-        ofPushMatrix();
-        ofTranslate(this->position[i].x, this->position[i].y);
-        ofRotateY(ofGetFrameNum());
-        ofSetColor(255, this->alpha[i]);
-        this->font.drawString(this->dataSets[i].entranceStationName, 0, 0);
-        ofPopMatrix();
+        if (!isVisible[i])
+            break;
+        font.drawString(this->dataSets[i].entranceStationName, 30, position[i].y);
+        font.drawString(this->dataSets[i].exitStationName, 280, position[i].y);
+        font.drawString(this->dataSets[i].entranceStationId.substr(0, 10), 520, position[i].y);
+        font.drawString(ofToString(this->dataSets[i].money) + "円", 700, position[i].y);
     }
-    this->mesh.draw();
+    ofPopStyle();
 }
 
 void InteractiveMode::isClicked(int x, int y) {
-    int i;
-    for (i = 0; i < this->dataSets.size(); i++) {
-        if (this->position[i].distance(ofVec2f(x, y)) <= 50)
-            break;
-    }
-    cout << this->dataSets[i].entranceStationName << " is Clicked" << endl;
-    this->state[i] = true;
+
 }

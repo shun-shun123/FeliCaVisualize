@@ -23,10 +23,9 @@ class InteractiveMode {
 private:
     vector<struct Elem> dataSets;
     vector<ofVec2f> position;
-    vector<int> alpha;
-    vector<bool> state;
+    vector<bool> isVisible;
     ofxTrueTypeFontUC font;
-    
+    int index = 0;
 public:
     InteractiveMode();
     InteractiveMode(vector<struct Elem> elem);
