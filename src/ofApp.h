@@ -2,8 +2,7 @@
 
 #include "ofMain.h"
 #include "ofxJson.h"
-#include "ofxTrueTypeFontUC.h"
-
+#include "InteractiveMode.hpp"
 
 class ofApp : public ofBaseApp{
 
@@ -22,19 +21,12 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-    static const int NUM_OF_PIC = 6;
     
     bool loadData(string file);
     
     ofxJSONElement json;
-    ofxTrueTypeFontUC font;
     const string inStaKey = "entranceStationName";
     const string outStaKey = "exitStationName";
     const string moneyKey = "exitStationID";
-    struct Elem {
-        string entranceStationName;
-        string exitStationName;
-        int money;
-    };
-    vector<struct Elem> dataSets;
+    InteractiveMode *interactiveMode = 0;
 };

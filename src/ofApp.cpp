@@ -6,8 +6,8 @@ void ofApp::setup(){
     ofSetVerticalSync(true);
     ofEnableAlphaBlending();
     loadData("data.json");
-    font.load("Batang.ttf", 30);
     
+    vector<struct Elem> dataSets;
     for (int i = 0; i < json.size(); i++) {
         struct Elem elem = {
              json[i][inStaKey].asString(),
@@ -16,16 +16,17 @@ void ofApp::setup(){
         };
         dataSets.push_back(elem);
     }
+    interactiveMode = new InteractiveMode(dataSets);
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-
+    interactiveMode->update();
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-
+    interactiveMode->draw();
 }
 
 //--------------------------------------------------------------
@@ -61,7 +62,7 @@ void ofApp::mouseDragged(int x, int y, int button){
 
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
-
+    interactiveMode->isClicked(x, y);
 }
 
 //--------------------------------------------------------------
