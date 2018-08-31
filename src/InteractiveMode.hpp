@@ -23,9 +23,16 @@ class InteractiveMode {
 private:
     vector<struct Elem> dataSets;
     vector<ofVec2f> position;
-    vector<bool> isVisible;
+    vector<vector<bool>> isVisible;
     ofxTrueTypeFontUC font;
+    ofxTrueTypeFontUC title;
     int index = 0;
+    int ticker = 1;
+    bool start = false;
+    int xRow[5] = {0, 300, 590, 800, 950};
+    int target = 0;
+    int loadingAnim = xRow[4] + 30;
+    bool left = true;
 public:
     InteractiveMode();
     InteractiveMode(vector<struct Elem> elem);
