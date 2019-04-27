@@ -15,4 +15,4 @@ This proj is a media-art which visualizes the information of Felica IC card. Aft
 * MacOS mojave
 * Xcode 10.2.1
 * openFrameworks0.10.1
-
+* [Andriod App which scan IC card data link](https://github.com/shun-shun123/NFCReader)
